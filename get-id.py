@@ -9,5 +9,6 @@ bot = telebot.TeleBot(BOT_TOKEN)
 def send_id(message):
     chat_id = message.chat.id
     bot.reply_to(message, f"Your chat id is: {chat_id}")
+    print(f"Your chat id is: {chat_id}")
 
 bot.polling()
