@@ -1,6 +1,6 @@
 # Telegram Notify Bot
 
-### You can set up a command to get a notification on Telegram to let you know when one of you *long* commands has finally finished executing
+### You can set up a command to get a notification on Telegram to let you know when one of your *long* commands has finally finished executing
 
 ## Use Case
 
@@ -44,7 +44,7 @@ pip install pytelegrambotapi
 # Installation
 
 ## Step 1
-- install all dependencies from above according to you distrobution
+- install all dependencies from above according to your distrobution
 
 ## Step 2
 - search up **@BotFather** on Telegram
