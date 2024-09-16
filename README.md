@@ -106,7 +106,7 @@ python notify.py
 - if successful, add the script to your system's **PATH**:
 
 ```bash
-sudo cp notify.py /usr/local/bin/
+sudo cp notify.py /usr/local/bin/notify
 ```
 
 ## Step 7
