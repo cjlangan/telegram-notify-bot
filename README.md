@@ -1,3 +1,12 @@
+# NOT DONE CREATING YET
+
+
+
+
+
+
+
+
 # Make the script execuatable
 chmod +x notify.py
 
