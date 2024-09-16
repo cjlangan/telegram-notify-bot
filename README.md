@@ -50,7 +50,7 @@ pip install pytelegrambotapi
 - search up **@BotFather** on Telegram
 - message `/newbot` to the BotFather
 - you will be asked to choose a **name** for your bot, it can be anything, I chose `NotiBot`
-- you will be asked to choose a **username** for you bot, it can be anything, but must be unique
+- you will be asked to choose a **username** for your bot, it can be anything, but must be unique
     - remember this username for later.
 - the BotFather will then send you your **API Token** for your Telegram bot
 
@@ -86,7 +86,7 @@ python get-id.py
 
 - this script will continue running until you message your bot.
 - so, on Telegram search up your bot's username and send it any message
-- the bot should reply with your **chat ID**.
+- the bot should reply with your **chat ID**. And it will be printed in the terminal as well.
 - stop the script by typing `Ctrl + C`
 - export the chat ID as an environment variable, making sure to **replace your chat ID for the placeholder**.
 
