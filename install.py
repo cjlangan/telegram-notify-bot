@@ -15,15 +15,15 @@ def install(message):
     # Stop the bot from checking for messages
     bot.stop_polling() 
     
-    # Command to set enivronment varibale and add script to path
+    # Command to set enivronment variable and add script to path
     var_name = "CHAT_ID"
     export = f"""echo 'export CHAT_ID="{chat_id}"' >> ~/.bashrc"""
     source = "source ~/.bashrc"
     add_path = "sudo cp notify.py /usr/local/bin/notify"
 
     # Only export if variable name doesn't already exist
-    if not var_name in os.environ:
-        subprocess.run(export, shell=True)
+    # if var_name not in os.environ:
+    subprocess.run(export, shell=True)
 
     # Run command
     subprocess.run(source, shell=True)
