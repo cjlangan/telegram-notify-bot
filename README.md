@@ -1,5 +1,7 @@
 # Telegram Notify Bot
 
+![](Images/telegram-workshop.png)
+
 ### You can set up a command to get a notification on Telegram to let you know when one of your *long* commands has finally finished executing
 
 ## Use Case
@@ -53,6 +55,8 @@ pip install pytelegrambotapi
 - you will be asked to choose a **username** for your bot, it can be anything, but must be unique
     - remember this username for later.
 - the BotFather will then send you your **API Token** for your Telegram bot
+
+![](Images/botfather.png)
 
 ## Step 3
 - export your bot's API as an environment variable by running the following command, ensuring to **replace your API Token for the placeholder**.
