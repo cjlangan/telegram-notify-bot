@@ -85,7 +85,7 @@ chmod +x install.py
 - Run the `install.py` script.
 
 ```bash
-python install.py
+sudo python install.py
 ```
 
 - this script will continue running until you message your bot.
