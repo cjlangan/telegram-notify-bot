@@ -23,11 +23,11 @@ def send_id(message):
     subprocess.run(add_path, shell=True)
 
     # Give user information
-    print(f"Your chat id is: {chat_id}, and has been exported to your path \n
-            You may now use append \" && notify\" to anny command")
+    print(f"""Your chat id is: {chat_id}, and has been exported to your path. 
+    You may now use append " && notify" to anny command""")
 
     # Use the notify script :)
-    subprocess.run(notify, shell=True)
+    subprocess.run("notify", shell=True)
     
 
 bot.polling(timeout=1, long_polling_timeout=1)
