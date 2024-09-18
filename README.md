@@ -77,15 +77,15 @@ git clone https://github.com/cjlangan/telegram-notify-bot
 
 ```bash
 cd telegram-notify-bot/
-chmod +x notify.py
-chmod +x install.py
+sudo chmod +x notify.py
+sudo chmod +x install.py
 ```
 
 ## Step 5
 - Run the `install.py` script.
 
 ```bash
-sudo python install.py
+python install.py
 ```
 
 - this script will continue running until you message your bot.
