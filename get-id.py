@@ -17,11 +17,17 @@ def send_id(message):
     # Export chat ID to an environment variable
     export = f"""echo 'export CHAT_ID="{chat_id}"' >> ~/.bashrc"""
     source = "source ~/.bashrc"
+    add_path = "sudo cp notify.py /usr/local/bin/notify"
     subprocess.run(export, shell=True)
     subprocess.run(source, shell=True)
+    subprocess.run(add_path, shell=True)
 
     # Give user information
-    print(f"Your chat id is: {chat_id}, and has been exported to your path")
+    print(f"Your chat id is: {chat_id}, and has been exported to your path \n
+            You may now use append \" && notify\" to anny command")
+
+    # Use the notify script :)
+    subprocess.run(notify, shell=True)
     
 
 bot.polling(timeout=1, long_polling_timeout=1)
