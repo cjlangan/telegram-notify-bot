@@ -17,13 +17,18 @@ def install(message):
     
     # Command to set enivronment variable and add script to path
     var_name = "CHAT_ID"
-    export = f"""echo 'export CHAT_ID="{chat_id}"' >> ~/.bashrc"""
+    export = f"""echo 'export {var_name}="{chat_id}"' >> ~/.bashrc"""
     source = "source ~/.bashrc"
     add_path = "sudo cp notify.py /usr/local/bin/notify"
 
-    # Only export if variable name doesn't already exist
-    # if var_name not in os.environ:
-    subprocess.run(export, shell=True)
+    # Open bashrc file
+    bashrc_path = os.path.expanduser("~/.bashrc")
+    with open(bashrc_path, "r") as bashrc:
+        bashrc_content = bashrc.read()
+
+    # Only export if variable name doesn't already exist in bashrc
+    if var_name not in bashrc_content:
+        subprocess.run(export, shell=True)
 
     # Run command
     subprocess.run(source, shell=True)
@@ -31,7 +36,7 @@ def install(message):
 
     # Give user information
     print(f"""Your chat id is: {chat_id}, and has been exported to your path. 
-    You may now use append " && notify" to anny command""")
+    You may now use append " && notify" to any command""")
 
     # Use the notify script :)
     subprocess.run("notify", shell=True)
