@@ -91,3 +91,6 @@ python get-id.py
 - this script will continue running until you message your bot.
 - message your bot at the **username** you gave it from earlier
 - send any message and the installation will complete
+
+### Thats it!
+- You should get a "Your Command has Finished Executing" message from your bot if all successful.
