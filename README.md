@@ -89,29 +89,5 @@ python get-id.py
 ```
 
 - this script will continue running until you message your bot.
-- so, on Telegram search up your bot's username and send it any message
-- the bot should reply with your **chat ID**. And it will be printed in the terminal as well.
-- stop the script by typing `Ctrl + C`
-- export the chat ID as an environment variable, making sure to **replace your chat ID for the placeholder**.
-
-```bash
-echo 'export CHAT_ID="chat-id-here"' >> ~/.bashrc
-source ~/.bashrc
-```
-
-## Step 6
-- test the `notify.py` script by running:
-
-```bash
-python notify.py
-```
-
-- you should get a notification on Telegram
-- if successful, add the script to your system's **PATH**:
-
-```bash
-sudo cp notify.py /usr/local/bin/notify
-```
-
-## Step 7
-- that's it! Now simply append ` && notify` to any command you want a notification for when it finishes executing.
+- message your bot at the **username** you gave it from earlier
+- send any message and the installation will complete
