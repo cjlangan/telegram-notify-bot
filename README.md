@@ -54,7 +54,7 @@ pip install pytelegrambotapi
 - you will be asked to choose a **name** for your bot, it can be anything, I chose `NotiBot`
 - you will be asked to choose a **username** for your bot, it can be anything, but must be unique
     - remember this username for later.
-- the BotFather will then send you your **API Token** for your Telegram bot
+- the BotFather will then send you your **API Token** for your Telegram bot.
 
 ![](Images/botfather.png)
 
